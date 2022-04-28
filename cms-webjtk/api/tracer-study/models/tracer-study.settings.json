@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracer_studies",
+  "info": {
+    "name": "TracerStudy"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Parameter": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true
+    },
+    "Nilai": {
+      "required": true,
+      "max": 100,
+      "type": "integer"
+    }
+  }
+}

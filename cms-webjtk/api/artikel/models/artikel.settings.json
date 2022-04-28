@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artikels",
+  "info": {
+    "name": "Artikel",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kategori": {
+      "type": "enumeration",
+      "enum": [
+        "ProfilJurusan",
+        "ProfilProdi",
+        "Kurikulum",
+        "Agenda",
+        "KerjaSama",
+        "SaranaPrasarana",
+        "Berita"
+      ],
+      "required": true
+    },
+    "Judul": {
+      "type": "string",
+      "maxLength": 70,
+      "required": true
+    },
+    "Banner": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Konten": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
