@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prestasis",
+  "info": {
+    "name": "Prestasi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kategori": {
+      "type": "enumeration",
+      "enum": [
+        "Provinsi",
+        "Nasional",
+        "Internasional"
+      ],
+      "required": true
+    },
+    "Nama_Penghargaan": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "Tingkatan": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "rincian_prestasi": {
+      "via": "prestasi",
+      "model": "rincian-prestasi"
+    }
+  }
+}

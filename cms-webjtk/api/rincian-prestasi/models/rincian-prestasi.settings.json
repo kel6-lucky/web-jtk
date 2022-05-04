@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rincian_prestasis",
+  "info": {
+    "name": "Rincian_Prestasi",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nama_Group": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "foto_group": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "Nama_Anggota": {
+      "type": "richtext",
+      "required": true
+    },
+    "prestasi": {
+      "via": "rincian_prestasi",
+      "model": "prestasi"
+    }
+  }
+}

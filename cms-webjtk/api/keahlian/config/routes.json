@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/keahlians",
+      "handler": "keahlian.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keahlians/count",
+      "handler": "keahlian.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/keahlians/:id",
+      "handler": "keahlian.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/keahlians",
+      "handler": "keahlian.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/keahlians/:id",
+      "handler": "keahlian.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/keahlians/:id",
+      "handler": "keahlian.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

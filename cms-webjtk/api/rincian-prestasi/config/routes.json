@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rincian-prestasis",
+      "handler": "rincian-prestasi.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rincian-prestasis/count",
+      "handler": "rincian-prestasi.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/rincian-prestasis/:id",
+      "handler": "rincian-prestasi.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/rincian-prestasis",
+      "handler": "rincian-prestasi.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rincian-prestasis/:id",
+      "handler": "rincian-prestasi.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rincian-prestasis/:id",
+      "handler": "rincian-prestasi.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

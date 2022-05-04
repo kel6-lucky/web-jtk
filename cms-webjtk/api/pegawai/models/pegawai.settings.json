@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pegawais",
+  "info": {
+    "name": "Pegawai",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tipe_pegawai": {
+      "type": "enumeration",
+      "enum": [
+        "TenagaKependidikan",
+        "Dosen"
+      ],
+      "required": true
+    },
+    "nama_lengkap": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": false
+    },
+    "foto_pegawai": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "keahlians": {
+      "via": "pegawai",
+      "collection": "keahlian"
+    },
+    "mata_kuliahs": {
+      "collection": "mata-kuliah",
+      "via": "pegawai"
+    },
+    "no_telephone": {
+      "type": "string",
+      "required": true,
+      "maxLength": 13,
+      "minLength": 11
+    }
+  }
+}

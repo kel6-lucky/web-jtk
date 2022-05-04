@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mata_kuliahs",
+  "info": {
+    "name": "Mata_Kuliah"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Kode_Mata_Kuliah": {
+      "type": "string",
+      "required": true,
+      "maxLength": 8,
+      "unique": true
+    },
+    "Nama_Mata_Kuliah": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "unique": true
+    },
+    "pegawai": {
+      "via": "mata_kuliahs",
+      "model": "pegawai"
+    }
+  }
+}

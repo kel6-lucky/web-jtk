@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "keahlians",
+  "info": {
+    "name": "Keahlian",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Keahlian": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "Publikasi": {
+      "type": "text"
+    },
+    "pegawai": {
+      "via": "keahlians",
+      "model": "pegawai"
+    }
+  }
+}
