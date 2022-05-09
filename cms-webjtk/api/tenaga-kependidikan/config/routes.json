@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/pegawais",
-      "handler": "pegawai.find",
+      "path": "/tenaga-kependidikans",
+      "handler": "tenaga-kependidikan.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pegawais/count",
-      "handler": "pegawai.count",
+      "path": "/tenaga-kependidikans/count",
+      "handler": "tenaga-kependidikan.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pegawais/:id",
-      "handler": "pegawai.findOne",
+      "path": "/tenaga-kependidikans/:id",
+      "handler": "tenaga-kependidikan.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/pegawais",
-      "handler": "pegawai.create",
+      "path": "/tenaga-kependidikans",
+      "handler": "tenaga-kependidikan.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/pegawais/:id",
-      "handler": "pegawai.update",
+      "path": "/tenaga-kependidikans/:id",
+      "handler": "tenaga-kependidikan.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/pegawais/:id",
-      "handler": "pegawai.delete",
+      "path": "/tenaga-kependidikans/:id",
+      "handler": "tenaga-kependidikan.delete",
       "config": {
         "policies": []
       }

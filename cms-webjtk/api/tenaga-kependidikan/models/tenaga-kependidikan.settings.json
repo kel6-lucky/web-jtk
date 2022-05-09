@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "rincian_prestasis",
+  "collectionName": "tenaga_kependidikans",
   "info": {
-    "name": "Rincian Prestasi",
+    "name": "Tenaga Kependidikan",
     "description": ""
   },
   "options": {
@@ -12,12 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nama_Group": {
+    "nama_lengkap": {
       "type": "string",
       "required": true,
-      "maxLength": 20
+      "maxLength": 50
     },
-    "foto_group": {
+    "no_telephone": {
+      "type": "string",
+      "required": true,
+      "maxLength": 13,
+      "minLength": 11
+    },
+    "foto_pegawai": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -26,14 +32,6 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
-    },
-    "Nama_Anggota": {
-      "type": "richtext",
-      "required": true
-    },
-    "prestasi": {
-      "via": "rincian_prestasi",
-      "model": "prestasi"
     }
   }
 }

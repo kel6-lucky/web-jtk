@@ -15,6 +15,7 @@
     "Kategori": {
       "type": "enumeration",
       "enum": [
+        "Lokal",
         "Provinsi",
         "Nasional",
         "Internasional"

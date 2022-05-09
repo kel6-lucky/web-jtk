@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "tracer_studies",
   "info": {
-    "name": "TracerStudy"
+    "name": "Tracer Study",
+    "description": ""
   },
   "options": {
     "increments": true,

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/keahlians",
-      "handler": "keahlian.find",
+      "path": "/publikasis",
+      "handler": "publikasi.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/keahlians/count",
-      "handler": "keahlian.count",
+      "path": "/publikasis/count",
+      "handler": "publikasi.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/keahlians/:id",
-      "handler": "keahlian.findOne",
+      "path": "/publikasis/:id",
+      "handler": "publikasi.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/keahlians",
-      "handler": "keahlian.create",
+      "path": "/publikasis",
+      "handler": "publikasi.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/keahlians/:id",
-      "handler": "keahlian.update",
+      "path": "/publikasis/:id",
+      "handler": "publikasi.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/keahlians/:id",
-      "handler": "keahlian.delete",
+      "path": "/publikasis/:id",
+      "handler": "publikasi.delete",
       "config": {
         "policies": []
       }

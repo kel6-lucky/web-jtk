@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "rincian_prestasis",
+  "collectionName": "dosens",
   "info": {
-    "name": "Rincian Prestasi",
-    "description": ""
+    "name": "Dosen"
   },
   "options": {
     "increments": true,
@@ -12,12 +11,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nama_Group": {
+    "nama_lengkap": {
       "type": "string",
       "required": true,
-      "maxLength": 20
+      "maxLength": 50
     },
-    "foto_group": {
+    "no_telephone": {
+      "type": "string",
+      "required": true,
+      "maxLength": 13
+    },
+    "foto_pegawai": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -27,13 +31,9 @@
       "required": true,
       "pluginOptions": {}
     },
-    "Nama_Anggota": {
-      "type": "richtext",
+    "keahlian": {
+      "type": "string",
       "required": true
-    },
-    "prestasi": {
-      "via": "rincian_prestasi",
-      "model": "prestasi"
     }
   }
 }
