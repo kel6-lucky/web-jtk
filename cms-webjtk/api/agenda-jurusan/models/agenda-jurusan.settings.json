@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "agenda_jurusans",
+  "info": {
+    "name": "Agenda Jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "judul": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "tanggal": {
+      "type": "date",
+      "required": true
+    },
+    "foto_agenda": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "deskripsi": {
+      "type": "string",
+      "required": true,
+      "maxLength": 500
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/agenda-jurusans",
+      "handler": "agenda-jurusan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/agenda-jurusans/count",
+      "handler": "agenda-jurusan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/agenda-jurusans/:id",
+      "handler": "agenda-jurusan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/agenda-jurusans",
+      "handler": "agenda-jurusan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/agenda-jurusans/:id",
+      "handler": "agenda-jurusan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/agenda-jurusans/:id",
+      "handler": "agenda-jurusan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
