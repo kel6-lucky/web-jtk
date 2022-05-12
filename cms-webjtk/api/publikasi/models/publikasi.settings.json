@@ -23,6 +23,10 @@
     "link_publikasi": {
       "type": "string",
       "required": false
+    },
+    "dosen": {
+      "via": "publikasis",
+      "model": "dosen"
     }
   }
 }

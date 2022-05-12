@@ -23,6 +23,10 @@
       "required": true,
       "maxLength": 50,
       "unique": true
+    },
+    "dosen": {
+      "via": "mata_kuliahs",
+      "model": "dosen"
     }
   }
 }

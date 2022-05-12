@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dosens",
   "info": {
-    "name": "Dosen"
+    "name": "Dosen",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -34,6 +35,14 @@
     "keahlian": {
       "type": "string",
       "required": true
+    },
+    "mata_kuliahs": {
+      "collection": "mata-kuliah",
+      "via": "dosen"
+    },
+    "publikasis": {
+      "collection": "publikasi",
+      "via": "dosen"
     }
   }
 }
