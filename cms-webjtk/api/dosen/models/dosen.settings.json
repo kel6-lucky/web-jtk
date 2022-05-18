@@ -37,8 +37,8 @@
       "required": true
     },
     "mata_kuliahs": {
-      "collection": "mata-kuliah",
-      "via": "dosen"
+      "via": "dosen",
+      "collection": "mata-kuliah"
     },
     "publikasis": {
       "collection": "publikasi",

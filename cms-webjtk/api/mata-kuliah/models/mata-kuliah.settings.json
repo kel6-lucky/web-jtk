@@ -27,6 +27,19 @@
     "dosen": {
       "via": "mata_kuliahs",
       "model": "dosen"
+    },
+    "prerequisite": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "ProgramStudi": {
+      "type": "enumeration",
+      "enum": [
+        "D3_TI",
+        "D4_TI"
+      ],
+      "required": true
     }
   }
 }
