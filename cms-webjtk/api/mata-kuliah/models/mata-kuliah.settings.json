@@ -37,7 +37,8 @@
       "type": "enumeration",
       "enum": [
         "D3_TI",
-        "D4_TI"
+        "D4_TI",
+        "D3_TI_dan_D4_TI"
       ],
       "required": true
     }
