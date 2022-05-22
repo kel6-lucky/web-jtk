@@ -49,8 +49,11 @@ export default {
 .side-bar .v-btn__content {
    text-decoration: underline;
 }
-span.v-btn__content {
+#SideBar span.v-btn__content {
     font-family: "Lato", sans-serif !important;
     color: #1976D2;
+}
+#SideBar .v-card.v-sheet.theme--light {
+    box-shadow: none !important;
 }
 </style>

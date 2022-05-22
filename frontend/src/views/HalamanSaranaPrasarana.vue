@@ -9,7 +9,7 @@
             </div>
             <div class="main-grid mt-8">
                 <div>
-                    <div class="grid-row-container">
+                    <div class="sarana-container">
                         <div 
                             v-for="(sarana_prasarana, index) in pagedAssets"
                             :key="`asset_index_${index}`"
@@ -85,7 +85,7 @@ export default {
     font-size: 20px;
     color: #1F3C88;
 }
-.grid-row-container {
+.sarana-container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
 }
