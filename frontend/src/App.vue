@@ -1,14 +1,16 @@
 <template>
-  <HalamanSaranaPrasarana></HalamanSaranaPrasarana>
+  <v-app>
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HalamanSaranaPrasarana from './views/HalamanSaranaPrasarana.vue';
-
 export default {
     name: "App",
+    components: { },
     data: () => ({
     }),
-    components: { HalamanSaranaPrasarana }
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
     <v-app>
+        <nav-bar />
         <img src="../assets/photos/Banner-SaranaPrasarana.jpg">
         <v-app class="main-container">
             <div class="mt-16 d-flex justify-center flex-column">
@@ -31,16 +32,25 @@
                         ></v-pagination>
                     </div>
                 </div>
-                <div> test </div>
+                <div> 
+                    <side-bar />
+                </div>
             </div>
         </v-app>
+        <footer-page />
     </v-app>
 </template>
 
 <script>
 import axios from 'axios';
+import SideBar from '../components/SideBar'
+import NavBar from '../components/NavBar'
+import FooterPage from '../components/FooterPage'
 
 export default {
+    components: {
+      NavBar, FooterPage, SideBar
+    },
     data() {
         return {
             sarana_prasaranas: [],
