@@ -1,0 +1,39 @@
+body {
+    color: #070D59 !important;
+}
+
+hr {
+    border-top: 4px solid #F7B633;
+    margin-top: 8px;
+}
+
+.divider-short {
+    width: 20rem;
+}
+
+.divider-medium {
+    width: 30rem;
+}
+
+.divider-long {
+    width: 40rem;
+}
+
+.text-md-h2  {
+    font-size: 60px;
+}
+
+.text-dark-blue {
+    color: #070D59;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.v-btn__content {
+    color: white;
+}
