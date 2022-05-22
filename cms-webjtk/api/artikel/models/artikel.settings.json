@@ -26,7 +26,7 @@
     },
     "Judul": {
       "type": "string",
-      "maxLength": 70,
+      "maxLength": 100,
       "required": true
     },
     "Banner": {
