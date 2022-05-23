@@ -23,12 +23,7 @@
                      </div>
                   </div>
                   <div class="mx-8">
-                     <p class="text-h5 font-weight-bold">Sponsorship</p>
-                     <div class="img">
-                        <img src="../assets/logopolban.png" height="40" width="30" style="margin-right: 10%;" contain/>
-                        <img src="../assets/logojtk.png" height="40" width="40" contain/>
-                     </div>
-                     <p class="text-h5 font-weight-bold mt-7">Kontak</p>
+                     <p class="text-h5 font-weight-bold">Kontak</p>
                      <v-btn
                         v-for="(item, index) in kontak"
                         :key="index"
