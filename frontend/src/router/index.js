@@ -36,7 +36,7 @@ const routes = [
     component: ProfilProdiD4
   },
   {
-    path: 'profil-jurusan',
+    path: '/profil-jurusan',
     name: 'profil-jurusan',
     component: ProfilJurusan
   }
