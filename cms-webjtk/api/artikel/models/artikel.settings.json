@@ -16,7 +16,8 @@
       "type": "enumeration",
       "enum": [
         "ProfilJurusan",
-        "ProfilProdi",
+        "ProfilProdiD3",
+        "ProfilProdiD4",
         "Kurikulum",
         "KerjaSama",
         "SaranaPrasarana",
