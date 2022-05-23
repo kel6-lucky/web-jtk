@@ -15,7 +15,7 @@
             <p class="article-content">{{article.Konten}}</p>
             <v-btn
                 depressed
-                color="#ffffff"
+                color="#1976D2"
                 class="btn-article"
             >
                 More
