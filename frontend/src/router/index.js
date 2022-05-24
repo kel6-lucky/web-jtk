@@ -6,6 +6,8 @@ import HalamanSaranaPrasarana from '../views/HalamanSaranaPrasarana.vue'
 import ProfilProdiD3 from '../views/ProfilProdiD3.vue'
 import ProfilProdiD4 from '../views/ProfilProdiD4.vue'
 import ProfilJurusan from '../views/ProfilJurusan.vue'
+import HalamanBerita from '../views/HalamanBerita.vue'
+import DataPrestasi from '../views/DataPrestasi.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,16 @@ const routes = [
     path: '/profil-jurusan',
     name: 'profil-jurusan',
     component: ProfilJurusan
+  },
+  {
+    path: '/halaman-berita',
+    name: 'halaman-berita',
+    component: HalamanBerita
+  },
+  {
+    path: '/data-prestasi',
+    name: 'data-prestasi',
+    component: DataPrestasi
   }
 ]
 

@@ -8,7 +8,7 @@
                 <hr class="divider-long">
             </div>
             <div class="main-grid mt-8">
-                <div>
+                <div class="mr-16" text-md style="text-align: justify">
                     <h4 class="text-md-h4 font-weight-black text-dark-blue">Visi dan Misi</h4>
                     <br>
                     <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Visi</h5>

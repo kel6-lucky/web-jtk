@@ -7,8 +7,8 @@
                 <h2 class="text-md-h2 font-weight-black text-dark-blue">Program Studi D-4</h2>
                 <hr class="divider-long">
             </div>
-            <div class="main-grid mt-8">
-                <div>
+            <div class="main-grid">
+                <div class="mr-16" text-md style="text-align: justify">
                     <p>Perkembangan perekonomian global secara positif telah menjadi tantangan dan peluang bagi semua negara termasuk Indonesia.
                         Selaras dengan perkembangan industri khususnya dibidang Teknologi Informasi dan Komunikasi, serta kebijakan otonomi daerah
                         di Indonesia, setiap institusi dituntut untuk mampu memanfaatkan teknologi dan kebijakan ini secara optimal. Oleh karena itu
