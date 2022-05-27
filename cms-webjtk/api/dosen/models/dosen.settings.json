@@ -32,17 +32,19 @@
       "required": true,
       "pluginOptions": {}
     },
+    "publikasis": {
+      "via": "dosen",
+      "collection": "publikasi"
+    },
     "keahlian": {
-      "type": "string",
-      "required": true
+      "type": "dynamiczone",
+      "components": [
+        "keahlian.keahlian"
+      ]
     },
     "mata_kuliahs": {
-      "via": "dosen",
+      "via": "dosens",
       "collection": "mata-kuliah"
-    },
-    "publikasis": {
-      "collection": "publikasi",
-      "via": "dosen"
     }
   }
 }

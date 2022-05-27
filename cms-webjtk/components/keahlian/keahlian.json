@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_keahlian_keahlians",
+  "info": {
+    "name": "keahlian",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "keahlian": {
+      "type": "enumeration",
+      "enum": [
+        "Software_Testing",
+        "Database",
+        "Software_Engineering",
+        "Mathematic",
+        "Multimedia",
+        "Big_Data",
+        "Software_Design",
+        "Information_Management",
+        "Information_System"
+      ],
+      "required": true
+    }
+  }
+}
