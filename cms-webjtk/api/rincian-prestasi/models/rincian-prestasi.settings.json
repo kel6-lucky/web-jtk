@@ -14,8 +14,7 @@
   "attributes": {
     "Nama_Group": {
       "type": "string",
-      "required": true,
-      "maxLength": 20
+      "required": true
     },
     "foto_group": {
       "model": "file",
