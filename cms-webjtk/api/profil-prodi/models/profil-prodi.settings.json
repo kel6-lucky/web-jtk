@@ -28,21 +28,12 @@
       "type": "text",
       "required": true
     },
-    "CPLS_Sikap": {
+    "Capaian_Lulusan": {
       "type": "text",
       "required": true
     },
-    "CPLS_PenguasaanPengetahuan": {
-      "type": "text",
-      "required": true
-    },
-    "CPLS_KeterampilanKhusus": {
-      "type": "text",
-      "required": true
-    },
-    "CPLS_KeterampilanUmum": {
-      "type": "richtext",
-      "required": true
+    "SKS_Semester": {
+      "type": "text"
     }
   }
 }

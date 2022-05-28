@@ -24,7 +24,15 @@
       "type": "text"
     },
     "Tujuan": {
-      "type": "richtext",
+      "type": "text",
+      "required": true
+    },
+    "Profil_Lulusan": {
+      "type": "text",
+      "required": true
+    },
+    "Capaian_Lulusan": {
+      "type": "text",
       "required": true
     }
   }
