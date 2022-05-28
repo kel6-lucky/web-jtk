@@ -3,7 +3,7 @@
         <nav-bar />
         <img src="../assets/photos/Banner.png">
         <v-app class="main-container">
-            <div class="col-16">
+            <div class="mt-16 d-flex justify-center flex-column">
             <div 
                 v-for="(article) in articles" 
                 :key="article.id" 

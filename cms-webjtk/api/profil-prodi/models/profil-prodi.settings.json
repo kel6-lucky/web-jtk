@@ -33,7 +33,12 @@
       "required": true
     },
     "SKS_Semester": {
-      "type": "text"
+      "type": "richtext",
+      "required": true
+    },
+    "Tujuan": {
+      "type": "text",
+      "required": true
     }
   }
 }
