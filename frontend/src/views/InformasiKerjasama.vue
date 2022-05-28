@@ -28,18 +28,17 @@
                     </div>
                     <div class="my-16">
                         <p class=" text-md-h4 font-weight-bold text-dark-blue my-6">Kerjasama Jurusan Teknik Komputer dan Informatika</p>
-                        <div class="img">
-                            <v-img
-                            :src="rincian_kerjasama.LogoPartnerKerjasama[0].url"
-                            max-height="100"
-                            max-width="100"
-                            style="margin-right: 5%;"
-                            contain
-                            />
+                        <div class="d-flex flex-row">
+                            <div class="img" v-for="image in rincian_kerjasama.LogoPartnerKerjasama" :key="image">
+                                <v-img
+                                :src="image.url"
+                                max-height="100"
+                                max-width="100"
+                                style="margin-right: 5%;"
+                                contain
+                                />
+                            </div>
                         </div>
-                        <!-- <div class="img" v-for="item in LogoPartnerKerjasama.url" v-bind:key="item">
-                            <v-img :src="item"/>
-                        </div> -->
                     </div>
                 </div>
                 <div> 
