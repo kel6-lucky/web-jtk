@@ -15,7 +15,13 @@
          <v-spacer></v-spacer>
 
          <v-toolbar-items>
-            <v-btn text class="text-subtitle-1 white--text no-uppercase">Beranda</v-btn>
+            <v-btn
+            text
+            class="text-subtitle-1 white--text no-uppercase"
+            to="/home"
+            >
+               Beranda
+            </v-btn>
             <v-menu
             open-on-hover
             down
@@ -30,7 +36,7 @@
                   v-bind="attrs"
                   class="text-subtitle-1 white--text no-uppercase"
                   >
-                     Artikel
+                     Tentang JTK
                      <v-icon>mdi-menu-down</v-icon>
                   </v-btn>
                </template>
@@ -45,15 +51,14 @@
                   >
                      <v-list-item-title>
                         {{ item.title }}
-                        <v-icon v-text="item.icon" color="orange"></v-icon>
                         <v-divider class="my-1 orange" style="border-width: 1px !important; height: 100%;"></v-divider>
                      </v-list-item-title> 
                   </v-list-item>
                </v-list>
             </v-menu>
-            <v-btn text class="text-subtitle-1 white--text no-uppercase">Data Prestasi</v-btn>
-            <v-btn text class="text-subtitle-1 white--text no-uppercase">Tracer Study</v-btn>
-            <v-btn text class="text-subtitle-1 white--text no-uppercase">Agenda</v-btn>
+            <v-btn text class="text-subtitle-1 white--text no-uppercase" to="/data-prestasi">Data Prestasi</v-btn>
+            <v-btn text class="text-subtitle-1 white--text no-uppercase" to="/tracer-study">Tracer Study</v-btn>
+            <v-btn text class="text-subtitle-1 white--text no-uppercase" to="/agenda-jurusan">Agenda</v-btn>
          </v-toolbar-items>
       </v-app-bar>
    </div>
@@ -67,7 +72,8 @@ export default {
          toHome: "/home",
          artikel: [
             {title: 'Profil Jurusan', link: "/profil-jurusan"},
-            {title: 'Profil Prodi', link: "/profil-prodi", icon:"mdi-chevron-right"},
+            {title: 'Profil Prodi D3', link: "/profil-prodi-d3"},
+            {title: 'Profil Prodi D4', link: "/profil-prodi-d4"},
             {title: 'Informasi Kurikulum', link: "/informasi-kurikulum"},
             {title: 'Info Kerjasama', link: "/informasi-kerjasama"},
             {title: 'Sarana dan Prasarana', link: "/sarana-prasarana"},
