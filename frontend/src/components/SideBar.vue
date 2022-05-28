@@ -25,13 +25,14 @@ export default {
     data () {
         return {
             sideBar: [
-                {title: 'Profil Jurusan', link:"/home"},
-                {title: 'Profil Prodi', link:""},
-                {title: 'Profil Pegawai', link:""},
-                {title: 'Informasi Kurikulum', link:""},
-                {title: 'Informasi Kerjasama', link:""},
-                {title: 'Sarana dan Prasarana', link:""},
-                {title: 'Berita', link:""},
+                {title: 'Profil Jurusan', link: "/profil-jurusan"},
+                {title: 'Profil Prodi D3', link: "/profil-prodi-d3"},
+                {title: 'Profil Prodi D4', link: "/profil-prodi-d4"},
+                {title: 'Profil Pegawai', link: "/profil-pegawai"},
+                {title: 'Informasi Kurikulum', link: "/informasi-kurikulum"},
+                {title: 'Info Kerjasama', link: "/informasi-kerjasama"},
+                {title: 'Sarana dan Prasarana', link: "/sarana-prasarana"},
+                {title: 'Berita', link: "berita"}
             ]
         }
     }
