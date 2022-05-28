@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/rincian-kerjasama",
+      "handler": "rincian-kerjasama.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/rincian-kerjasama",
+      "handler": "rincian-kerjasama.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/rincian-kerjasama",
+      "handler": "rincian-kerjasama.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

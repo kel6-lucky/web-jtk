@@ -25,7 +25,7 @@
                             <div class="mt-2 font-weight-medium judul">{{sarana_prasarana.Judul}}</div>
                         </div>
                     </div>
-                    <div class="text-center mt-8">
+                    <div class="text-center my-8">
                         <v-pagination
                         v-model="pageNo"
                         :length="numPages"
@@ -56,7 +56,6 @@ export default {
             sarana_prasaranas: [],
             pageNo: 1,
             pageSize: 9,
-            total_asets: 0
         };
     },
     computed: {

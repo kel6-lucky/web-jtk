@@ -15,32 +15,39 @@
     "Kode_Mata_Kuliah": {
       "type": "string",
       "required": true,
-      "maxLength": 8,
+      "maxLength": 9,
       "unique": true
     },
     "Nama_Mata_Kuliah": {
       "type": "string",
       "required": true,
       "maxLength": 50,
-      "unique": true
+      "unique": false
     },
-    "dosen": {
+    "dosens": {
+      "collection": "dosen",
       "via": "mata_kuliahs",
-      "model": "dosen"
+      "dominant": true
     },
     "prerequisite": {
       "type": "string",
       "required": true,
-      "maxLength": 150
+      "maxLength": 150,
+      "default": "-"
     },
-    "ProgramStudi": {
+    "Program_Studi": {
       "type": "enumeration",
       "enum": [
         "D3_TI",
-        "D4_TI",
-        "D3_TI_dan_D4_TI"
+        "D4_TI"
       ],
       "required": true
+    },
+    "Semester": {
+      "type": "integer",
+      "required": true,
+      "max": 8,
+      "min": 1
     }
   }
 }

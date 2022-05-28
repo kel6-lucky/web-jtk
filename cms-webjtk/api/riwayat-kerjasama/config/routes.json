@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/riwayat-kerjasamas",
+      "handler": "riwayat-kerjasama.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/riwayat-kerjasamas/count",
+      "handler": "riwayat-kerjasama.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/riwayat-kerjasamas",
+      "handler": "riwayat-kerjasama.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
