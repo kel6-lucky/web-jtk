@@ -32,6 +32,15 @@
       "plugin": "upload",
       "required": true,
       "pluginOptions": {}
+    },
+    "bidang_profesi": {
+      "type": "enumeration",
+      "enum": [
+        "TenagaAdministrasi",
+        "Teknisi",
+        "PramuKantor"
+      ],
+      "required": true
     }
   }
 }

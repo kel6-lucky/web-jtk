@@ -33,17 +33,17 @@ export default {
             headers: [
                 { text: 'Kode Mata Kuliah', sortable: false, value: 'Kode_Mata_Kuliah'},
                 { text: 'Nama Mata Kuliah', sortable: false, value: 'Nama_Mata_Kuliah' },
-                { text: ' Prerequisite', sortable: false, value: 'Prerequisite' }
+                { text: 'Prerequisite', sortable: false, value: 'prerequisite' },
+                { text: 'Semester', sortable: false, value: 'Semester' },
             ],
             mata_kuliah: []
         }
     },
     mounted() {
         axios
-            .get("http://localhost:1337/mata-kuliahs")
+            .get("http://localhost:1337/mata-kuliahs?_where[0][Program_Studi]=D3_TI")
             .then(response => {
             this.mata_kuliah = response.data;
-            console.log(this.mata_kuliah)
         })
     }
 }

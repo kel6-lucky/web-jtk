@@ -3,7 +3,7 @@
         <div class="table-style">
             <v-data-table
             :headers="headers"
-            :items="riwayat_kerjasama"
+            :items="mata_kuliah"
             class="elevation-1"
             :itemsPerPage="5"
             :page.sync="page"
@@ -25,24 +25,25 @@
 import axios from "axios";
 
 export default {
-    name: 'TableRiwayatKerjasama',
+    name: 'TableMatkulD4',
     data() {
         return {
             page: 1,
 			pageCount: 0,
             headers: [
-                { text: 'Nama Kerjasama', sortable: false, value: 'NamaKerjasama'},
-                { text: 'Partner Kerjasama', sortable: false, value: 'PartnerKerjasama' },
-                { text: 'Periode Kerjasama', sortable: false, value: 'PeriodeKerjasama' }
+                { text: 'Kode Mata Kuliah', sortable: false, value: 'Kode_Mata_Kuliah'},
+                { text: 'Nama Mata Kuliah', sortable: false, value: 'Nama_Mata_Kuliah' },
+                { text: 'Prerequisite', sortable: false, value: 'prerequisite' },
+                { text: 'Semester', sortable: false, value: 'Semester' },
             ],
-            riwayat_kerjasama: []
+            mata_kuliah: []
         }
     },
     mounted() {
         axios
-            .get("http://localhost:1337/riwayat-kerjasamas")
+            .get("http://localhost:1337/mata-kuliahs?_where[0][Program_Studi]=D4_TI")
             .then(response => {
-            this.riwayat_kerjasama = response.data;
+            this.mata_kuliah = response.data;
         })
     }
 }

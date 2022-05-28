@@ -4,6 +4,7 @@ import HalamanBeranda from '../views/HalamanBeranda.vue'
 import HalamanSaranaPrasarana from '../views/HalamanSaranaPrasarana.vue'
 import InformasiKerjasama from '../views/InformasiKerjasama.vue'
 import InformasiKurikulum from '../views/InformasiKurikulum.vue'
+import ProfilPegawai from '../views/HalamanProfilPegawai.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     name: 'informasi-kurikulum',
     component: InformasiKurikulum
   },
+  {
+    path: '/profil-pegawai',
+    name: 'profil-pegawai',
+    component: ProfilPegawai
+  }
 ]
 
 const router = new VueRouter({
