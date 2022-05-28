@@ -7,7 +7,25 @@
                 <h2 class="text-md-h2 font-weight-black text-dark-blue">Program Studi D-4</h2>
                 <hr class="divider-long">
             </div>
-            <div class="main-grid">
+            <div class="main-grid mt-8">
+                <div>
+                    <div class="prodi_D4-container">
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D4.Deskripsi}}</p>
+                        <br>
+                        <h4 class="text-md-h4 font-weight-black text-dark-blue">Visi dan Misi</h4>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Visi</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D4.Visi}}</p>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Misi</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{marked(Profil_Prodi_D4.Misi)}}</p>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Keterampilan Umum</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D4.CPLS_KeterampilanUmum}}</p>
+                        <br>
+                    </div>
+                </div>
+            <!-- <div class="main-grid">
                 <div class="mr-16" text-md style="text-align: justify">
                     <p>Perkembangan perekonomian global secara positif telah menjadi tantangan dan peluang bagi semua negara termasuk Indonesia.
                         Selaras dengan perkembangan industri khususnya dibidang Teknologi Informasi dan Komunikasi, serta kebijakan otonomi daerah
@@ -62,7 +80,7 @@
                     <p><v-icon>mdi-square-small</v-icon> Software Testing Professional</p>
                     <p><v-icon>mdi-square-small</v-icon> Manager IT</p>
                     <br>
-                </div>
+                </div> -->
                 <div> 
                     <side-bar />
                 </div>
@@ -73,40 +91,35 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 import SideBar from '../components/SideBar'
 import NavBar from '../components/NavBar'
 import FooterPage from '../components/FooterPage'
-// import marked from 'marked'
+import marked from 'marked';
 
 export default {
     components: {
         NavBar, SideBar, FooterPage
     },
-    name: 'ProfilProdiD3',
 
     data() {
         return {
-            profil_prodi_d3: [],
-            artikel: "",
-            articles: []
+            Profil_Prodi_D4: [],
+            markdown: ""
         };
     },
-    // mounted() {
-    //     axios
-    //         .get("http://localhost:1337/artikels?_where[0][Kategori]=ProfilProdiD3")
-    //         .then(response => {
-    //         this.articles = response.data;
-    //         this.articles = this.articles.sort((a, b) => (a.published_at < b.published_at) ? 1 : (b.published_at < a.published_at) ? -1 : 0);
-    //         this.articles = this.articles.slice(0, 3);
-    //         console.log(this.articles)
-    //     })
-    // },
-    // computed: {
-    //     markdownToHtml() {
-    //          return marked(this.articles)
-    //     }
-    // }
+    mounted() {
+         axios
+             .get("http://localhost:1337/profil-prodi")
+             .then(response => {
+             this.Profil_Prodi_D4 = response.data;
+         })
+     },
+     computed: {
+         markdownToHtml() {
+              return marked(this.markdown)
+        }
+    }
 }
 </script>
 

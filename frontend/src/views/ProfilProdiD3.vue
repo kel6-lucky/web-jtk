@@ -8,6 +8,24 @@
                 <hr class="divider-long">
             </div>
             <div class="main-grid mt-8">
+                <div>
+                    <div class="prodi_D3-container">
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D3.Deskripsi}}</p>
+                        <br>
+                        <h4 class="text-md-h4 font-weight-black text-dark-blue">Visi dan Misi</h4>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Visi</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D3.Visi}}</p>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Misi</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D3.Misi}}</p>
+                        <br>
+                        <h5 class="text-md-h5 d-flex justify-center font-weight-black text-dark-blue">Tujuan</h5>
+                        <p class="mr-16" text-md style="text-align: justify">{{Profil_Prodi_D3.Tujuan}}</p>
+                        <br>
+                    </div>
+                </div>
+            <!-- <div class="main-grid mt-8">
                 <div class="mr-16" text-md style="text-align: justify">
                     <h4 class="text-md-h4 font-weight-black text-dark-blue">Visi dan Misi</h4>
                     <br>
@@ -57,7 +75,7 @@
                     <p><v-icon>mdi-square-small</v-icon> Requirement Analyst</p>
                     <p><v-icon>mdi-square-small</v-icon> Designer</p>
                     <br>
-                </div>
+                </div> -->
                 <div> 
                     <side-bar />
                 </div>
@@ -68,7 +86,7 @@
 </template>
 
 <script>
-// import axios from 'axios';
+import axios from 'axios';
 import SideBar from '../components/SideBar'
 import NavBar from '../components/NavBar'
 import FooterPage from '../components/FooterPage'
@@ -82,26 +100,18 @@ export default {
 
     data() {
         return {
-            profil_prodi_d3: [],
-            artikel: "",
-            articles: []
+            Profil_Prodi_D3: [],
+            deskripsi: "",
+            htmlString: ""
         };
     },
-    // mounted() {
-    //     axios
-    //         .get("http://localhost:1337/artikels?_where[0][Kategori]=ProfilProdiD3")
-    //         .then(response => {
-    //         this.articles = response.data;
-    //         this.articles = this.articles.sort((a, b) => (a.published_at < b.published_at) ? 1 : (b.published_at < a.published_at) ? -1 : 0);
-    //         this.articles = this.articles.slice(0, 3);
-    //         console.log(this.articles)
-    //     })
-    // },
-    // computed: {
-    //     markdownToHtml() {
-    //          return marked(this.articles)
-    //     }
-    // }
+     mounted() {
+         axios
+             .get("http://localhost:1337/profil-prodi-d-3")
+             .then(response => {
+             this.Profil_Prodi_D3 = response.data;
+         })
+    }
 }
 </script>
 
