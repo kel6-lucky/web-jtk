@@ -32,7 +32,8 @@ export default {
                 {title: 'Informasi Kurikulum', link: "/informasi-kurikulum"},
                 {title: 'Info Kerjasama', link: "/informasi-kerjasama"},
                 {title: 'Sarana dan Prasarana', link: "/sarana-prasarana"},
-                {title: 'Berita', link: "berita"}
+                {title: 'Agenda', link: "/agenda"},
+                {title: 'Berita', link: "/berita"}
             ]
         }
     }
