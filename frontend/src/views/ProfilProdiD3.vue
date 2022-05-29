@@ -153,14 +153,14 @@ export default {
 
     data() {
         return {
-            Profil_Prodi_D4: [],
+            Profil_Prodi_D3: [],
         };
     },
     mounted() {
          axios
-             .get("http://localhost:1337/profil-prodi")
+             .get("http://localhost:1337/profil-prodi-d-3")
              .then(response => {
-             this.Profil_Prodi_D4 = response.data;
+             this.Profil_Prodi_D3 = response.data;
          })
      },
 }
