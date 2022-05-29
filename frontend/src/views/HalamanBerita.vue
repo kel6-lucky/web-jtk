@@ -2,23 +2,48 @@
     <v-app>
         <nav-bar />
         <img src="../assets/photos/Banner.png">
-        <v-app class="main-container">
-            <div class="mt-16 d-flex justify-center flex-column">
-            <div 
-                v-for="(article) in articles" 
-                :key="article.id" 
-                class="article"
-            >
-            <h2 class="text-md-h2 text-dark-blue font-weight-black">{{article.Judul}}</h2>
-            <hr class="divider-long">
-            <v-img
-                :lazy-src="article.Banner[0].url"
-                :src="article.Banner[0].url"
-                class="my-6 rounded-lg"
-            ></v-img>
-            <p class="article-content">{{article.Konten}}</p>
-        </div>
-                <div> 
+        <v-app>
+            <div class="main-grid">
+                <!-- <div 
+                    v-for="(item, index) in articles" 
+                    :key="item.id"
+                    class="ma-16 d-flex justify-center flex-column"
+                >
+                    <h2 class="text-md-h2 font-weight-black text-dark-blue">{{item.Judul}}</h2>
+                    <hr style="width: 45rem;">
+                    <v-img
+                        :lazy-src="item.Banner[0].url"
+                        :src="item.Banner[0].url"
+                        class="my-6 rounded-lg"
+                    ></v-img>
+                    <p class="text-md-subtitle-1 text-black mt-6 mb-14" style="text-align: justify"> {{item.Konten}} </p>
+                </div> -->
+                <!-- <div class="text-center mb-16">
+                    <v-pagination
+                    v-model="page"
+                    :length="pageCount"
+                    ></v-pagination>
+                </div> -->
+                <div class="ma-16 d-flex justify-center flex-column">
+                    <h2 class="text-md-h2 font-weight-black text-dark-blue">Kuliah Tamu "The Future Work"</h2>
+                    <hr style="width: 45rem;">
+                    <v-img
+                        src="../assets/photos/Webinar-Future-Work.jpeg"
+                        class="my-6 rounded-lg"
+                    ></v-img>
+                    <p class="text-md-subtitle-1 text-black mt-6 mb-14" style="text-align: justify">
+                        Sabtu (21/05), HIMAKOM beserta panitia kuliah tamu dari Jurusan Teknik Informatika POLBAN telah menyelenggarakan
+                        kuliah tamu pada platform Zoom Meeting.
+                        Dunia kerja pun berada dalam kondisi yang berubah-ubah. Salah satunya pergeseran secara masif di berbagai bidang,
+                        mulai pertanian, manufaktur, pertambangan, transportasi, teknologi, dan sebagainya. Keadaan tersebut secara disadari
+                        atau tidak telah menyebabkan kecemasan pada kalangan pencari kerja. Dengan memahami perubahan yang terjadi melalui
+                        pengenalan tren yang dapat terjadi di tempat kerja, tenaga kerja, dan sifat pekerjaan, “The future of work” dapat
+                        membantu pembuat kebijakan, pemimpin bisnis, dan pekerja bergerak maju. Pada kesempatan kali ini Kuliah Tamu
+                        Industri/Praktisi menghadirkan pemateri <b>Cici Sucipta</b>, yang akan sharing pengalaman untuk meningkatkan pengetahuan
+                        keluarga JTK dengan tema <b>"The Future of Work"</b>
+                    </p>
+                </div>
+                <div class="mt-16"> 
                     <side-bar />
                 </div>
             </div>
@@ -41,8 +66,8 @@ export default {
 
     data() {
         return {
-            berita: [],
-            artikel: "",
+            page: 1,
+			pageCount: 0,
             articles: []
         };
     },
@@ -51,23 +76,20 @@ export default {
             .get("http://localhost:1337/artikels?_where[0][Kategori]=Berita")
             .then(response => {
             this.articles = response.data;
-            // this.articles = this.articles.sort((a, b) => (a.published_at < b.published_at) ? 1 : (b.published_at < a.published_at) ? -1 : 0);
-            // this.articles = this.articles.slice(0, 3);
-            // console.log(this.articles)
+            console.log(this.articles[0])
         })
     },
-    // computed: {
-    //     markdownToHtml() {
-    //          return marked(this.articles)
-    //     }
-    // }
 }
 </script>
 
 <style>
 .main-grid {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: 60% auto;
 }
+/* .main-grid {
+    display: grid;
+    grid-template-columns: 70% auto;
+} */
 </style>
 
