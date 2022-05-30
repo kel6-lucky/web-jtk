@@ -3,26 +3,37 @@
         <div class="table-style">
             <v-data-table
             :headers="headers"
-            :items="mata_kuliah"
+            :items="prestasi"
             class="elevation-1"
             :itemsPerPage="5"
             :page.sync="page"
             @page-count="pageCount = $event"
             hide-default-footer
             >
+                <!-- <template #prestasi.nama="{ value }">
+                    <a :href="`mailto:${value}`">
+                    {{ value }}
+                    </a>
+                </template>
+                <template #item.url="{ value }">
+                    <a target="_blank" :href="value">
+                    {{ value }}
+                    </a>
+                </template> -->
             </v-data-table>
             <div class="text-center mt-8">
                 <v-pagination
-                v-model="page"
-                :length="pageCount"
+                    v-model="page"
+                    :length="pageCount"
                 ></v-pagination>
+            <br>
             </div>
         </div>
     </v-app>
 </template>
 
 <script>
-// import axios from "axios";
+import axios from "axios";
 export default {
     name: 'TableDataPrestasi',
     data() {
@@ -30,21 +41,48 @@ export default {
             page: 1,
 			pageCount: 0,
             headers: [
-                { text: 'Nama Peraih', sortable: false, value: 'Nama_Peraih'},
+                { text: 'Nama Peraih', sortable: false, value: 'rincian_prestasi.Nama_Group'},
                 { text: 'Kategori', sortable: false, value: 'Kategori' },
-                { text: 'Nama Kejuaraan', sortable: false, value: 'Nama Kejuaraan' },
-                { text: 'Tingkatan', sortable: false, value: 'Tingkatan' },
+                { text: 'Nama Penghargaan', sortable: false, value: 'Nama_Penghargaan' },
+                { text: 'Tingkatan', sortable: false, value: 'Tingkatan' }
             ],
-            data_prestasi: []
+            prestasi: []
+        //     items: [
+        //     {
+        //     "_id": "5ea1e60a93027edf047920df",
+        //     "name": {
+        //       "first": "Roxie",
+        //       "last": "Huber"
+        //     },
+        //     "company": "ISOLOGICS",
+        //     "email": "roxie.huber@isologics.name",
+        //     "phone": "+1 (866) 403-3864",
+        //     "url": "//stackoverflow.com",
+        //     "address": "144 Hawthorne Street, Rodman, Mississippi, 5592"
+        //   },
+        //   {
+        //     "_id": "5ea1e60a7104924488c67093",
+        //     "name": {
+        //       "first": "Wilma",
+        //       "last": "Ferrell"
+        //     },
+        //     "company": "OMATOM",
+        //     "email": "wilma.ferrell@omatom.info",
+        //     "phone": "+1 (815) 526-2057",
+        //     "url": "//google.com",
+        //     "address": "621 Pilling Street, Elliston, Arizona, 4968"
+        //   },
+        // ]
         }
     },
-    // mounted() {
-    //     axios
-    //         .get("http://localhost:1337/mata-kuliahs?_where[0][Program_Studi]=D3_TI")
-    //         .then(response => {
-    //         this.data_prestasi = response.data;
-    //     })
-    // }
+    mounted() {
+        axios
+            .get("http://localhost:1337/prestasis")
+            .then(response => {
+            this.prestasi = response.data;
+            console.log(this.prestasi);
+        })
+    }
 }
 </script>
 
