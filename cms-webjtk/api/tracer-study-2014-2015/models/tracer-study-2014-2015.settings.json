@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "tracer_study_2014_2015s",
+  "info": {
+    "name": "Tracer Study Lulusan 2014-2015",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "non_informatika": {
+      "type": "integer"
+    },
+    "level_perusahaan_lulusan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "level-perusahaan.level-perusahaan"
+    },
+    "range_gaji_lulusan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "range-gaji.range-gaji"
+    },
+    "Informatika": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bidang-profesi.bidang-profesi"
+    }
+  }
+}
