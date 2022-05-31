@@ -82,9 +82,9 @@ export default {
          ],
          aksesCepat: [
             {title: 'Beranda', link:"/home"},
-            {title: 'Data Prestasi', link:""},
-            {title: 'Tracer Study', link:""},
-            {title: 'Agenda', link:""},
+            {title: 'Data Prestasi', link:"/data-prestasi"},
+            {title: 'Tracer Study', link:"tracer-study"},
+            {title: 'Agenda', link:"/agenda"},
          ]
       }
    }

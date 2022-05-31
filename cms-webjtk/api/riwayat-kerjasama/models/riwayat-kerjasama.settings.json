@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "riwayat_kerjasamas",
+  "info": {
+    "name": "Riwayat Kerjasama"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NamaKerjasama": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "PartnerKerjasama": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "PeriodeKerjasama": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    }
+  }
+}

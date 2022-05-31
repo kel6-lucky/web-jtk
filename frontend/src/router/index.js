@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HalamanBeranda from '../views/HalamanBeranda.vue'
-import AboutView from '../views/AboutView.vue'
 import HalamanSaranaPrasarana from '../views/HalamanSaranaPrasarana.vue'
+import InformasiKerjasama from '../views/InformasiKerjasama.vue'
+import InformasiKurikulum from '../views/InformasiKurikulum.vue'
 import ProfilPegawai from '../views/HalamanProfilPegawai.vue'
 import TracerStudy from '../views/HalamanTracerStudy.vue'
+import HalamanAgenda from '../views/HalamanAgenda.vue'
 
 Vue.use(VueRouter)
 
@@ -15,14 +17,19 @@ const routes = [
     component: HalamanBeranda
   },
   {
-    path: '/about',
-    name: 'about',
-    component: AboutView
-  },
-  {
     path: '/sarana-prasarana',
     name: 'sarana-prasarana',
     component: HalamanSaranaPrasarana
+  },
+  {
+    path: '/informasi-kerjasama',
+    name: 'informasi-kerjasama',
+    component: InformasiKerjasama
+  },
+  {
+    path: '/informasi-kurikulum',
+    name: 'informasi-kurikulum',
+    component: InformasiKurikulum
   },
   {
     path: '/profil-pegawai',
@@ -33,7 +40,12 @@ const routes = [
     path: '/tracer-study',
     name: 'tracer-study',
     component: TracerStudy
-  }
+  },
+  {
+    path: '/agenda',
+    name: 'agenda',
+    component: HalamanAgenda
+  },
 ]
 
 const router = new VueRouter({

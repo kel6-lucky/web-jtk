@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/tracer-studies",
-      "handler": "tracer-study.find",
+      "path": "/riwayat-kerjasamas",
+      "handler": "riwayat-kerjasama.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/count",
-      "handler": "tracer-study.count",
+      "path": "/riwayat-kerjasamas/count",
+      "handler": "riwayat-kerjasama.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/tracer-studies/:id",
-      "handler": "tracer-study.findOne",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/tracer-studies",
-      "handler": "tracer-study.create",
+      "path": "/riwayat-kerjasamas",
+      "handler": "riwayat-kerjasama.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/tracer-studies/:id",
-      "handler": "tracer-study.update",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/tracer-studies/:id",
-      "handler": "tracer-study.delete",
+      "path": "/riwayat-kerjasamas/:id",
+      "handler": "riwayat-kerjasama.delete",
       "config": {
         "policies": []
       }

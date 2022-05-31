@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "rincian_kerjasamas",
+  "info": {
+    "name": "Rincian Kerjasama",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "JenisKerjasama": {
+      "type": "text",
+      "required": true
+    },
+    "LinkPengajuan": {
+      "type": "string",
+      "required": true
+    },
+    "LogoPartnerKerjasama": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
