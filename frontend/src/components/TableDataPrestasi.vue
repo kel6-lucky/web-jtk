@@ -1,33 +1,51 @@
 <template>
     <v-app>
-        <div class="table-style">
-            <v-data-table
-            :headers="headers"
-            :items="prestasi"
-            class="elevation-1"
-            :itemsPerPage="5"
-            :page.sync="page"
-            @page-count="pageCount = $event"
-            hide-default-footer
-            >
-                <!-- <template #prestasi.nama="{ value }">
-                    <a :href="`mailto:${value}`">
-                    {{ value }}
-                    </a>
-                </template>
-                <template #item.url="{ value }">
-                    <a target="_blank" :href="value">
-                    {{ value }}
-                    </a>
-                </template> -->
-            </v-data-table>
-            <div class="text-center mt-8">
-                <v-pagination
-                    v-model="page"
-                    :length="pageCount"
-                ></v-pagination>
-            <br>
-            </div>
+        <div class="main-grid">
+            <v-container>
+                <div class="table-style">
+                        <v-data-table
+                        :headers="headers"
+                        :items="prestasi"
+                        class="elevation-1"
+                        :itemsPerPage="5"
+                        :page.sync="page"
+                        @page-count="pageCount = $event"
+                        hide-default-footer
+                        >
+                            <template v-slot:[`item.rincian_prestasi.Nama_Group`]=" item ">
+                                <a :href="item.item.rincian_prestasi.Nama_Group">
+                                    {{item.item.rincian_prestasi.Nama_Group}}
+                                    <popup-rincian-prestasi />
+                                    <!-- <v-dialog v-model="dialog" max-width="40%">
+                                        <v-card>
+                                            <v-container>
+                                                {{item.item.rincian_prestasi}}
+                                                Nama Peraih: {{item.item.prestasi.Nama_Penghargaan}}
+                                                {{item.item.rincian_prestasi.Foto_Group}}
+
+                                                <v-row>
+                                                    <v-col cols="8">
+                                                        Nama Peraih
+                                                    </v-col>
+                                                    <v-col cols="8">
+                                                        : {{item.item.rincian_prestasi.Nama_Group}}
+                                                    </v-col>
+                                                </v-row>
+                                            </v-container>
+                                        </v-card>
+                                    </v-dialog> -->
+                                </a>
+                            </template>
+                        </v-data-table>
+                    <div class="text-center mt-8">
+                        <v-pagination
+                            v-model="page"
+                            :length="pageCount"
+                        ></v-pagination>
+                    <br>
+                    </div>
+                </div>
+            </v-container>
         </div>
     </v-app>
 </template>
@@ -47,32 +65,6 @@ export default {
                 { text: 'Tingkatan', sortable: false, value: 'Tingkatan' }
             ],
             prestasi: []
-        //     items: [
-        //     {
-        //     "_id": "5ea1e60a93027edf047920df",
-        //     "name": {
-        //       "first": "Roxie",
-        //       "last": "Huber"
-        //     },
-        //     "company": "ISOLOGICS",
-        //     "email": "roxie.huber@isologics.name",
-        //     "phone": "+1 (866) 403-3864",
-        //     "url": "//stackoverflow.com",
-        //     "address": "144 Hawthorne Street, Rodman, Mississippi, 5592"
-        //   },
-        //   {
-        //     "_id": "5ea1e60a7104924488c67093",
-        //     "name": {
-        //       "first": "Wilma",
-        //       "last": "Ferrell"
-        //     },
-        //     "company": "OMATOM",
-        //     "email": "wilma.ferrell@omatom.info",
-        //     "phone": "+1 (815) 526-2057",
-        //     "url": "//google.com",
-        //     "address": "621 Pilling Street, Elliston, Arizona, 4968"
-        //   },
-        // ]
         }
     },
     mounted() {
