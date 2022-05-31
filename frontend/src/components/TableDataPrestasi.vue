@@ -15,7 +15,6 @@
                             <template v-slot:[`item.rincian_prestasi.Nama_Group`]=" item ">
                                 <p @click="goToRincian()" style="color: blue; text-decoration: underline;">
                                     {{item.item.rincian_prestasi.Nama_Group}}
-                                    <!-- <popup-rincian-prestasi /> -->
                                 </p>
                                 <!-- <v-dialog v-model="dialog" max-width="40%">
                                         <v-card>
