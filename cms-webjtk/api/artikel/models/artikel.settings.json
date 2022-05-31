@@ -15,7 +15,6 @@
     "Kategori": {
       "type": "enumeration",
       "enum": [
-        "Kurikulum",
         "SaranaPrasarana",
         "Berita"
       ],
