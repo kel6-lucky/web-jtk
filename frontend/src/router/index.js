@@ -5,6 +5,7 @@ import HalamanSaranaPrasarana from '../views/HalamanSaranaPrasarana.vue'
 import InformasiKerjasama from '../views/InformasiKerjasama.vue'
 import InformasiKurikulum from '../views/InformasiKurikulum.vue'
 import ProfilPegawai from '../views/HalamanProfilPegawai.vue'
+import TracerStudy from '../views/HalamanTracerStudy.vue'
 import HalamanAgenda from '../views/HalamanAgenda.vue'
 
 Vue.use(VueRouter)
@@ -34,6 +35,11 @@ const routes = [
     path: '/profil-pegawai',
     name: 'profil-pegawai',
     component: ProfilPegawai
+  },
+  {
+    path: '/tracer-study',
+    name: 'tracer-study',
+    component: TracerStudy
   },
   {
     path: '/agenda',

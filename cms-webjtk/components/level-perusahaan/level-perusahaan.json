@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_level_perusahaan_level_perusahaans",
+  "info": {
+    "name": "level-perusahaan",
+    "icon": "globe-americas"
+  },
+  "options": {},
+  "attributes": {
+    "level_perusahaan": {
+      "type": "enumeration",
+      "enum": [
+        "Nasional",
+        "Multi_Nasional",
+        "Global",
+        "Internasional"
+      ]
+    },
+    "jumlah_lulusan": {
+      "type": "integer"
+    }
+  }
+}

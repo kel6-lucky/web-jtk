@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tracer-study-lulusan-2018-2019",
+      "handler": "tracer-study-lulusan-2018-2019.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tracer-study-lulusan-2018-2019",
+      "handler": "tracer-study-lulusan-2018-2019.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tracer-study-lulusan-2018-2019",
+      "handler": "tracer-study-lulusan-2018-2019.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

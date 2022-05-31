@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tracer-study-2014-2015",
+      "handler": "tracer-study-2014-2015.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tracer-study-2014-2015",
+      "handler": "tracer-study-2014-2015.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tracer-study-2014-2015",
+      "handler": "tracer-study-2014-2015.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

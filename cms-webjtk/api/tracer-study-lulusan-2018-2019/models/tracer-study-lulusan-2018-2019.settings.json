@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "tracer_study_lulusan_2018_2019s",
+  "info": {
+    "name": "Tracer Study Lulusan 2018-2019",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "non_informatika": {
+      "type": "integer"
+    },
+    "level_perusahaan_lulusan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "level-perusahaan.level-perusahaan"
+    },
+    "range_gaji_lulusan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "range-gaji.range-gaji"
+    },
+    "informatika": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bidang-profesi.bidang-profesi"
+    }
+  }
+}
