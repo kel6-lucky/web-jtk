@@ -8,6 +8,7 @@ import ProfilProdiD4 from '../views/ProfilProdiD4.vue'
 import ProfilJurusan from '../views/ProfilJurusan.vue'
 import HalamanBerita from '../views/HalamanBerita.vue'
 import DataPrestasi from '../views/DataPrestasi.vue'
+import RincianPrestasi from '../components/RincianPrestasi.vue'
 
 Vue.use(VueRouter)
 
@@ -51,6 +52,11 @@ const routes = [
     path: '/data-prestasi',
     name: 'data-prestasi',
     component: DataPrestasi
+  },
+  {
+    path: '/rincian-prestasi',
+    name: 'rincian-prestasi',
+    component: RincianPrestasi
   }
 ]
 

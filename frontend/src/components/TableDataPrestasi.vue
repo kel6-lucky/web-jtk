@@ -13,10 +13,11 @@
                         hide-default-footer
                         >
                             <template v-slot:[`item.rincian_prestasi.Nama_Group`]=" item ">
-                                <a :href="item.item.rincian_prestasi.Nama_Group">
+                                <p @click="goToRincian()" style="color: blue; text-decoration: underline;">
                                     {{item.item.rincian_prestasi.Nama_Group}}
-                                    <popup-rincian-prestasi />
-                                    <!-- <v-dialog v-model="dialog" max-width="40%">
+                                    <!-- <popup-rincian-prestasi /> -->
+                                </p>
+                                <!-- <v-dialog v-model="dialog" max-width="40%">
                                         <v-card>
                                             <v-container>
                                                 {{item.item.rincian_prestasi}}
@@ -34,7 +35,6 @@
                                             </v-container>
                                         </v-card>
                                     </v-dialog> -->
-                                </a>
                             </template>
                         </v-data-table>
                     <div class="text-center mt-8">
@@ -64,7 +64,8 @@ export default {
                 { text: 'Nama Penghargaan', sortable: false, value: 'Nama_Penghargaan' },
                 { text: 'Tingkatan', sortable: false, value: 'Tingkatan' }
             ],
-            prestasi: []
+            prestasi: [],
+            dialog: false
         }
     },
     mounted() {
@@ -74,6 +75,11 @@ export default {
             this.prestasi = response.data;
             console.log(this.prestasi);
         })
+    },
+    methods: {
+        goToRincian() { 
+            this.$router.push(`/rincian-prestasi`)
+        }
     }
 }
 </script>
