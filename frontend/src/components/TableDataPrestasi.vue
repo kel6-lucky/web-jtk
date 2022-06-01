@@ -13,27 +13,9 @@
                         hide-default-footer
                         >
                             <template v-slot:[`item.rincian_prestasi.Nama_Group`]=" item ">
-                                <p @click="goToRincian()" style="color: blue; text-decoration: underline;">
+                                <p @click="goToRincian(item.item.rincian_prestasi.id)" style="color: blue; text-decoration: underline;">
                                     {{item.item.rincian_prestasi.Nama_Group}}
                                 </p>
-                                <!-- <v-dialog v-model="dialog" max-width="40%">
-                                        <v-card>
-                                            <v-container>
-                                                {{item.item.rincian_prestasi}}
-                                                Nama Peraih: {{item.item.prestasi.Nama_Penghargaan}}
-                                                {{item.item.rincian_prestasi.Foto_Group}}
-
-                                                <v-row>
-                                                    <v-col cols="8">
-                                                        Nama Peraih
-                                                    </v-col>
-                                                    <v-col cols="8">
-                                                        : {{item.item.rincian_prestasi.Nama_Group}}
-                                                    </v-col>
-                                                </v-row>
-                                            </v-container>
-                                        </v-card>
-                                    </v-dialog> -->
                             </template>
                         </v-data-table>
                     <div class="text-center mt-8">
@@ -76,8 +58,8 @@ export default {
         })
     },
     methods: {
-        goToRincian() { 
-            this.$router.push(`/rincian-prestasi`)
+        goToRincian(id) { 
+            this.$router.push(`/rincian-prestasi?id=` + id)
         }
     }
 }

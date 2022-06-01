@@ -4,26 +4,6 @@
         <img src="../assets/photos/Banner.png">
         <v-app>
             <div class="main-grid">
-                <!-- <div 
-                    v-for="(item, index) in articles" 
-                    :key="item.id"
-                    class="ma-16 d-flex justify-center flex-column"
-                >
-                    <h2 class="text-md-h2 font-weight-black text-dark-blue">{{item.Judul}}</h2>
-                    <hr style="width: 45rem;">
-                    <v-img
-                        :lazy-src="item.Banner[0].url"
-                        :src="item.Banner[0].url"
-                        class="my-6 rounded-lg"
-                    ></v-img>
-                    <p class="text-md-subtitle-1 text-black mt-6 mb-14" style="text-align: justify"> {{item.Konten}} </p>
-                </div> -->
-                <!-- <div class="text-center mb-16">
-                    <v-pagination
-                    v-model="page"
-                    :length="pageCount"
-                    ></v-pagination>
-                </div> -->
                 <div class="ma-16 d-flex justify-center flex-column">
                     <h2 class="text-md-h2 font-weight-black text-dark-blue">Kuliah Tamu "The Future Work"</h2>
                     <hr style="width: 45rem;">
@@ -87,9 +67,5 @@ export default {
     display: grid;
     grid-template-columns: 60% auto;
 }
-/* .main-grid {
-    display: grid;
-    grid-template-columns: 70% auto;
-} */
 </style>
 

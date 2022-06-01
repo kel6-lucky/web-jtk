@@ -9,6 +9,7 @@
             </div>
             <div class="main-grid mt-8">
                 <div class="mr-16" text-md style="text-align: justify">
+                    <markdown-display />
                     <p>D-III bidang teknik komputer dan informatika telah berdiri sejak 1977 dan
                         merupakan pendidikan diploma bidang teknologi informasi pertama di Indonesia.</p>
                     <br>
@@ -145,10 +146,11 @@ import axios from 'axios';
 import SideBar from '../components/SideBar'
 import NavBar from '../components/NavBar'
 import FooterPage from '../components/FooterPage'
+import MarkdownDisplay from '../components/MarkdownDisplay'
 
 export default {
     components: {
-        NavBar, SideBar, FooterPage
+        NavBar, SideBar, FooterPage, MarkdownDisplay
     },
 
     data() {

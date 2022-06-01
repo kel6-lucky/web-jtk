@@ -49,14 +49,6 @@ export default {
             profil_jurusan: []
         };
     },
-    // mounted() {
-    //     axios
-    //         .get("http://localhost:1337/profil-jurusan?_where[0][Kategori]=ProfilProdiD3")
-    //         .then(response => {
-    //         this.articles = response.data;
-
-    //     })
-    // }
 }
 </script>
 

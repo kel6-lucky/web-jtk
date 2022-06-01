@@ -7,10 +7,10 @@ import { marked } from "marked";
 
 export default {
   name: "MarkdownDisplay",
-  props: ["markdown"],
+  props: ["Konten"],
   computed: {
     convertMd() {
-      let text = this.markdown;
+      let text = this.Konten;
 
       text = text.replace(/\n/g, "<br />");
 
