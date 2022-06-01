@@ -20,10 +20,11 @@ Make sure you have installed all of the following prerequisites on your developm
 ### 🎉 Installation
 
  - Create an `.env` file with the following contents:
-	> DATABASE_URI=mongodb+srv://admin:Admin2022@webjtk.jqla1.mongodb.net/webjtk?retryWrites=true&w=majority
-	> CLOUDINARY_NAME=dirsukqov
-	> CLOUDINARY_KEY=298563315146977
-	> CLOUDINARY_SECRET=ae21kmrRVYe5mMfSFbuXqsjPaMA 
+    ```
+    DATABASE_URI=mongodb+srv://admin:Admin2022@webjtk.jqla1.mongodb.net/webjtk?retryWrites=true&w=majority
+    CLOUDINARY_NAME=dirsukqov
+    CLOUDINARY_KEY=298563315146977
+    CLOUDINARY_SECRET=ae21kmrRVYe5mMfSFbuXqsjPaMA
 
  - Project setup
 	```bash
