@@ -26,8 +26,8 @@ export default {
         return {
             sideBar: [
                 {title: 'Profil Jurusan', link: "/profil-jurusan"},
-                {title: 'Profil Prodi D3', link: "/profil-prodi-d3"},
-                {title: 'Profil Prodi D4', link: "/profil-prodi-d4"},
+                {title: 'Profil Prodi D3', link: "/prodi-d3"},
+                {title: 'Profil Prodi D4', link: "/prodi-d4"},
                 {title: 'Profil Pegawai', link: "/profil-pegawai"},
                 {title: 'Informasi Kurikulum', link: "/informasi-kurikulum"},
                 {title: 'Info Kerjasama', link: "/informasi-kerjasama"},

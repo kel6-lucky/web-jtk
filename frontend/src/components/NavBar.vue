@@ -94,9 +94,6 @@
                   </v-list-item>
                </v-list>
             </v-menu>
-
-
-            <!-- <v-btn text class="text-subtitle-1 white--text no-uppercase" to="/agenda-jurusan">Agenda</v-btn> -->
          </v-toolbar-items>
       </v-app-bar>
    </div>
@@ -110,8 +107,8 @@ export default {
          toHome: "/home",
          artikel: [
             {title: 'Profil Jurusan', link: "/profil-jurusan"},
-            {title: 'Profil Prodi D3', link: "/profil-prodi-d3"},
-            {title: 'Profil Prodi D4', link: "/profil-prodi-d4"},
+            {title: 'Profil Prodi D3', link: "/prodi-d3"},
+            {title: 'Profil Prodi D4', link: "/prodi-d4"},
             {title: 'Profil Pegawai', link: "/profil-pegawai"},
          ],
          informasiUmum: [

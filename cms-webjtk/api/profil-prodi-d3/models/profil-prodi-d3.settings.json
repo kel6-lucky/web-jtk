@@ -1,0 +1,43 @@
+{
+  "kind": "singleType",
+  "collectionName": "Profil_Prodi_D3",
+  "info": {
+    "name": "Profil_Prodi_D3",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Deskripsi": {
+      "type": "text",
+      "required": true
+    },
+    "Visi": {
+      "type": "text",
+      "required": true
+    },
+    "Misi": {
+      "type": "text"
+    },
+    "Tujuan": {
+      "type": "text",
+      "required": true
+    },
+    "Profil_Lulusan": {
+      "type": "text",
+      "required": true
+    },
+    "Capaian_Lulusan": {
+      "type": "text",
+      "required": true
+    },
+    "SKS_Semester": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

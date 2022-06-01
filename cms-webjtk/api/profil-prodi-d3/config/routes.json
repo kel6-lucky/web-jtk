@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/profil-prodi-d-3",
+      "handler": "profil-prodi-d3.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/profil-prodi-d-3",
+      "handler": "profil-prodi-d3.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/profil-prodi-d-3",
+      "handler": "profil-prodi-d3.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

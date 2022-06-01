@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "Profil_Jurusan",
+  "info": {
+    "name": "Profil_Jurusan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Visi": {
+      "type": "string",
+      "required": true
+    },
+    "Visi_dan_Misi": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
