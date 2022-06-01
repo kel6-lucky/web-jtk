@@ -15,11 +15,6 @@
     "Kategori": {
       "type": "enumeration",
       "enum": [
-        "ProfilJurusan",
-        "ProfilProdiD3",
-        "ProfilProdiD4",
-        "Kurikulum",
-        "KerjaSama",
         "SaranaPrasarana",
         "Berita"
       ],

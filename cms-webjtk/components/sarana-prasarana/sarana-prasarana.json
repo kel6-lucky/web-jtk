@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sarana_prasarana_sarana_prasaranas",
+  "info": {
+    "name": "SaranaPrasarana",
+    "icon": "archway"
+  },
+  "options": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "url_foto": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

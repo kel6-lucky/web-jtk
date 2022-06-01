@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_bidang_profesi_bidang_profesis",
+  "info": {
+    "name": "bidang-profesi",
+    "icon": "book-reader",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "bidang_profesi": {
+      "type": "enumeration",
+      "enum": [
+        "frontend_developer",
+        "backend_developer",
+        "full_stack_developer",
+        "cloud_engineer",
+        "database_engineer",
+        "data_engineer",
+        "game_developer",
+        "mobile_developer",
+        "data_scientist",
+        "dev_ops_engineer",
+        "system_analyst",
+        "network_and_systems_administrator"
+      ]
+    },
+    "jumlah_lulusan": {
+      "type": "integer"
+    }
+  }
+}

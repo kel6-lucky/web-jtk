@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_range_gaji_range_gajis",
+  "info": {
+    "name": "range_gaji",
+    "icon": "donate"
+  },
+  "options": {},
+  "attributes": {
+    "range_gaji": {
+      "type": "enumeration",
+      "enum": [
+        "range_1",
+        "range_2",
+        "range_3",
+        "range_4",
+        "range_5",
+        "range_6"
+      ]
+    },
+    "jumlah_lulusan": {
+      "type": "integer"
+    }
+  }
+}

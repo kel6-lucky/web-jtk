@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "profil_lulusans",
+  "info": {
+    "name": "Profil Lulusan",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ProfilLulusanD3": {
+      "type": "text",
+      "required": true
+    },
+    "ProfilLulusanD4": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
